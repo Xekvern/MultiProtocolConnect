@@ -20,8 +20,13 @@ class Main extends PluginBase implements Listener {
 		$player = $event->getPlayer();
 		$pk = $event->getPacket();
 		if(!$pk instanceof LoginPacket) return;
-
-		$pk->protocol = ProtocolInfo::CURRENT_PROTOCOL;
-	}
+			if(ProtocolInfo::CURRENT_PROTOCOL == 419 && == 422){
+				if($pk->protocol >= 418 && $pk->protocol < 424){//pocketmine is not support <418 or >=424 | 418 is rtx beta it support
+					$pk->protocol = ProtocolInfo::CURRENT_PROTOCOL;
+				}
+			}else{ //i don't have many time to add more
+				$pk->protocol = ProtocolInfo::CURRENT_PROTOCOL;
+			}
+	     }
 
 }
