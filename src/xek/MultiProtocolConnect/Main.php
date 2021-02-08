@@ -20,6 +20,7 @@ class Main extends PluginBase implements Listener {
 		$player = $event->getPlayer();
 		$pk = $event->getPacket();
 	        if{$pl instanceof LoginPacket) return;
+		   if(ProtocolInfo::CURRENT_PROTOCOL = 419 && = 422){
 		       if(ProtocolInfo::CURRENT_PROTOCOL == 419 && ProtocolInfo::CURRENT_PROTOCOL == 412{
 			       if($pk->protocol >= 418 && $pk->protocol < 424){	     
 				       $pk->protocol = ProtocolInfo::CURRENT_PROTOCOL; 
@@ -30,5 +31,5 @@ class Main extends PluginBase implements Listener {
 		       }
 			       
 	    }
-
+			  
 }		
