@@ -1,7 +1,6 @@
 ---
 name: MultiProtocolConnect
 version: 1.1.0
-main: xek\MultiProtocolConnect\Main
+main: mpc\MultiProtocolConnect\Main
 api: 3.15.1
-author: xek
 ...
