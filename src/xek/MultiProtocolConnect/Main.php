@@ -25,18 +25,10 @@ class Main extends PluginBase implements Listener {
 				       
 				       $pk->protocol = ProtocolInfo::CURRENT_PROTOCOL;  
 		                } 
-		        }else{
 			       
-		             if(ProtocolInfo::CURRENT_PROTOCOL == 419 && ProtocolInfo::CURRENT_PROTOCOL == 422{
-				     
-			             if($pk->protocol >= 418 && $pk->protocol < 424){
-
-				             $pk->protocol = ProtocolInfo::CURRENT_PROTOCOL;  
-		                   }
-		           }else{
-
-			$pk->protocol = ProtocolInfo::CURRENT_PROTOCOL;  
+		        }else{
+			     
+			       $pk->protocol = ProtocolInfo::CURRENT_PROTOCOL;  
 	             }		
-	       }
-       }	   
+            }	   
 }	
